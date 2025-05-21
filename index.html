@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We are Sorry & Happy Birthday 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Baloo 2', cursive;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      overflow-x: hidden;
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      margin-top: 40px;
+      color: #fff;
+      text-shadow: 2px 2px 4px #00000030;
+    }
+    .message-box {
+      max-width: 600px;
+      margin: 30px auto;
+      background: #ffffffcc;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .balloon-container {
+      margin-top: 30px;
+    }
+    .balloon {
+      display: inline-block;
+      background: #ffd1dc;
+      color: #000;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 25px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .balloon:hover {
+      transform: scale(1.1);
+      background-color: #ffb6c1;
+    }
+    .final-msg {
+      margin-top: 40px;
+      font-size: 1.5em;
+      padding: 20px;
+      background: #fff3cd;
+      border-radius: 15px;
+      display: inline-block;
+    }
+    .footer-button {
+      margin-top: 20px;
+      display: inline-block;
+      background: #ff6f91;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer-button:hover {
+      background: #ff4e75;
+    }
+  </style>
+</head>
+<body>
+  <h1>We are Sorry & Happy Birthday 🎂</h1>
+
+  <div class="message-box">
+    <p>Our dear bhav we know we missed your special day and we are so, so sorry. 🥺<br>
+    But we couldn't let this week go by without making you smile at least a little. 💗<br>
+    We know this cannot make up but we hope you accept our little apology<br>
+    P.S click on the ballons below :))</p>
+  </div>
+
+  <div class="balloon-container">
+    <div class="balloon" onclick="showMessage(0)">🎈</div>
+    <div class="balloon" onclick="showMessage(1)">🎈</div>
+    <div class="balloon" onclick="showMessage(2)">🎈</div>
+    <div class="balloon" onclick="showMessage(3)">🎈</div>
+  </div>
+
+  <div id="friend-message" style="margin-top: 20px; font-size: 1.3em; color: #fff; padding: 20px;"></div>
+
+  <div class="final-msg">
+    Thank you for being the most amazing friend ever. Your kindness, laughter, and love means the world to us. 💞<br>
+    we promise we’ll make this up to you in the most special way soon!
+  </div>
+
+  
+
+  <script>
+    const messages = [
+      "Hey Bhav,Happy belated birthday <3, we have been together since years and yet idk how i let your bday slip out of my mind but I want to tell you how much i appreciate you and how amazing you are , you are quite literally perfect in every aspect a perfect person , a perfect friend and soo much more ,i cannot put into words the love i have for you and will continue having.You deserve everything in the world and much more.💖 – Tani",
+      "I’m so so so so so sorry for missing your birthday!! I honestly don’t know how I let it slip — but happy (very belated) birthday to my absolute favorite person! You are the kindest, smartest, most beautiful soul and I’m SO SO SO SO lucky to have you in my life.I hope your day was as amazing as you are, and I can’t wait to celebrate with you properly soon! I promise to make it up to you IN LIFE. – Nada 💫",
+      "Hiii bhavvvv I’m veryveryveeyveryveyrvyevyeveryy sorryyy Happy happy happy birthdayyy You’re the coolest person i know .You can call me a donkeylady for forgetting your birthday I’m truly ashamed and extremelysorryyy 😭🫶🏼 – Vaish ✨",
+      "Dear Bhav,Happy belated birthday! I love you very very much, and i sincerely apologise. Please trust me when I say that I'm more than just appalled and mortified by the fact that I forgot to wish you. Again, happy birthday, love you! Please visit soon! Hugs and kisses <3– Kava 🌈"
+    ];
+
+    function showMessage(index) {
+      const msgBox = document.getElementById('friend-message');
+      msgBox.innerText = messages[index];
+    }
+  </script>
+</body>
+</html>
